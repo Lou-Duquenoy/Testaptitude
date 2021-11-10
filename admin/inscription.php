@@ -41,6 +41,12 @@
                         <?php
                         break;
 
+                        case 'password_number_letter_length'
+                        ?>
+                            <div class="alert alert-danger">
+                                <strong>Erreur</strong> mot de passe non valide
+                            </div>
+                        <?php
                         case 'email_length':
                         ?>
                             <div class="alert alert-danger">

@@ -37,13 +37,13 @@
 
     <h2>Ajouter/modifier supprimer un produit</h2>
     <label >Url icone :</label>
-    <input type="file" name="icon_url" id="icon_url" autocomplete="off">
+    <input type="file" name="icon_url" id="icon_url" required autocomplete="off">
     <label >Poids :</label>
-    <input type="text" name="poids" id="poids" autocomplete="off" value="<?php echo is_array($current_products) ? $current_products['poids'] : '' ; ?>" />
+    <input type="text" name="poids" id="poids" required autocomplete="off" value="<?php echo is_array($current_products) ? $current_products['poids'] : '' ; ?>" />
     <label >Prix :</label>
-    <input type="text" name="prix" id="prix" autocomplete="off" value="<?php echo is_array($current_products) ? $current_products['prix'] : '' ; ?>" />
+    <input type="text" name="prix" id="prix" required  autocomplete="off" value="<?php echo is_array($current_products) ? $current_products['prix'] : '' ; ?>" />
     <label >Date :</label>
-    <input type="text" name="date_de_peremption" autocomplete="off" id="date_de_peremption" value="<?php echo is_array($current_products) ? $current_products['date_de_peremption'] : '' ; ?>" />
+    <input type="text" name="date_de_peremption" required autocomplete="off" id="date_de_peremption" value="<?php echo is_array($current_products) ? $current_products['date_de_peremption'] : '' ; ?>" />
     
     <!-- Hide the two buttons and replace one another after a click  -->
     <?php if(isset ($_GET['action']) && $_GET['action']=='update'):?>
