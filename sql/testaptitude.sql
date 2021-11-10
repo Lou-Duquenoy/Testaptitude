@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 10 nov. 2021 à 18:16
+-- Généré le : mer. 10 nov. 2021 à 22:44
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -26,6 +26,9 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `password_recover`
 --
+CREATE DATABASE testaptitude;
+
+USE testaptitude;
 
 DROP TABLE IF EXISTS `password_recover`;
 CREATE TABLE IF NOT EXISTS `password_recover` (
@@ -84,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `date_inscription` date DEFAULT NULL,
   `token` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `utilisateurs`
@@ -92,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 
 INSERT INTO `utilisateurs` (`id`, `pseudo`, `email`, `password`, `ip`, `date_inscription`, `token`) VALUES
 (1, 'Lou', 'lou.duquenoy@gmail.com', '07e1725076d669b421d2991c1c67f9dceb84631ca9c66c84cab7cfd9201344fc', '::1', NULL, ''),
-(2, 'Lou2', 'lou.duquenoy2@gmail.com', '$2y$12$hR8m9b083gDDTGyTk3g21eOnkkgFFPxUNdQovkh.Z0kXkDx1hCRMK', '::1', NULL, '90811a1653ed5bcc0430bea5a003ed3e86a9471f101e8459');
+(3, 'Lou', 'lou.duquenoy3@gmail.com', '07e1725076d669b421d2991c1c67f9dceb84631ca9c66c84cab7cfd9201344fc', '::1', NULL, '415c3c769a18f3c41810fde534053764c6c961efd0b76d12');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
